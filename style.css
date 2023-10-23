@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgb(57, 201, 206);
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: 1fr 5fr;
+    text-align: center;
+    height: 100vh;
+}
+
+.main-header {
+    grid-column: 2;
+}
+
+.nav {
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 4fr 2fr 6fr;
+    gap: 1.5em;
+    min-width: 25%;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.icon {
+    flex: 1;
+}
+
+.tittle {
+    flex: 2;
+}
+
+.links, .options {
+    display: grid;
+    grid-template-columns: 20% 5fr;
+    column-gap: 1em;
+    align-items: center;
+}
+
+.links a, .options a{
+    justify-self: start;
+}
+
+.main-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.search-section {
+    grid-column: 1 / 3;
+}
+
+.actions {
+    grid-row: 2;
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.actions button {
+    width: 20%;
+}
+
+.l-user {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-row: 1fr 1fr;
+}
+
+.user-ico {
+    grid-row: 1 / 3;
+    grid-column: 1;
+}
+
+.s-user {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.search-section {
+    display: flex;
+    gap: 20px;
+}
+
+.search-bar {
+    flex: 1;
+    
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 40px 20px;
+    gap: 20px;
+}
+
+.projects {
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 30%;
+    overflow: scroll;
+    overflow-x: hidden; 
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
