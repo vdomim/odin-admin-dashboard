@@ -160,6 +160,7 @@ body {
     overflow: scroll;
     overflow-x: hidden; 
     gap: 1rem;
+    padding: 1rem;
 }
 
 .card-container::-webkit-scrollbar {
@@ -286,4 +287,8 @@ svg{
     flex-direction: column;
     justify-content: center;
     align-items: start;
+}
+
+.shadow {
+    box-shadow: 5px 4px 6px 1px rgba(138, 186, 206, 0.767);
 }
