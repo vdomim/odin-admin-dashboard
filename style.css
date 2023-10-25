@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     /*border: 1px solid rgb(57, 201, 206);*/
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -66,6 +69,8 @@ body {
     color: #FFF;
     font-size: 25px;
     font-weight: bolder;
+    width: 100%;
+    text-align: left;
 }
 
 .main-header {
@@ -73,7 +78,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
-    padding: 2.5rem;
+    padding: 1rem;
+    padding-left: 40px;
 }
 
 .search-section {
@@ -86,6 +92,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 2px;
 }
 
 .actions button {
@@ -129,6 +136,7 @@ body {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 40px;
+    padding-top: 20px;
     gap: 20px;
     background-color: aliceblue;
     overflow: hidden;
@@ -146,10 +154,11 @@ body {
     display: none;
 }
 
-.projects h1 {
+.projects h1, .announcements h1, .trendings h1 {
     text-align: left;
     margin: 1rem;
     margin-left: 0;
+    padding-left: 1rem;
 }
 .card-container {
     flex: 1;
@@ -188,6 +197,7 @@ body {
     padding: 2rem 0;
     padding-right: 2rem;
     gap: 1rem;
+    text-align: start;
 }
 
 svg{
@@ -236,7 +246,7 @@ svg{
     border-radius: 20px;
     font-size: 20px;
     font-weight: bolder;
-    border: 1px solid rgba(128, 128, 128, 0.473);
+    border: 2px solid #22d3ee;
 }
 
 .card-links {
@@ -291,4 +301,30 @@ svg{
 
 .shadow {
     box-shadow: 5px 4px 6px 1px rgba(138, 186, 206, 0.767);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #FFF;
+    color: #22d3ee;
+    border-color: #22d3ee;
+    border-width: 2px;
+}
+
+.blue-svg:hover{
+    fill: #FFF;
+    background-color: #22d3ee;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.links a:hover, .options a:hover {
+    font-size: 30px;
+}
+
+.search-bar {
+    font-size: larger;
+    font-weight: 800;
+    text-indent: 20px;
+    color: rgba(127, 131, 134, 0.616);
 }
